@@ -1,7 +1,7 @@
 const func = (str, f) => f(str);
 
 const e1 = func('supercalifragilisticexpialidocious',
-    str => [str.slice(0,5), str.slice(5,19), str.slice(19,29), str.slice(29)]);
+    str => str.replace(/c/g, "*c").split('*'));
 
 console.log(e1);
 
