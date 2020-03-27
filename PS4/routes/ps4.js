@@ -10,7 +10,7 @@ router.get('/',function(req,res,next){
         res.render('ps4',{title: value["Title"], plot: value["Plot"]});
     })
     .catch(err => {
-        res.render('ps4',{movie: "Error"});
+        res.render('ps4',{title: "Error"});
     })
 });
 
