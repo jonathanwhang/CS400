@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1>Woohoo! Movies!</h1>
+
+<div>
+  <ul>
+    <li *ngFor="let movie of movies">
+      {{movie.title}}
+      <ul>
+        <li>{{movie.year}}</li>
+        <li>{{movie.runtime}}</li>
+      </ul>
+    </li>
+  </ul>
+</div>
