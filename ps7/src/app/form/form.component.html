@@ -1,0 +1,8 @@
+<form [formGroup]="movieInfo" (ngSubmit)="validateForm()">
+  <input type="text" formControlName="title" required><br/>
+  <input type="checkbox" formControlName="year"><label>year</label><br/>
+  <input type="checkbox" formControlName="plot"><label>plot</label><br/>
+  <button type="submit">Submit</button>
+</form>
+
+<app-query-result [title]="title" [year]="year" [plot]="plot"></app-query-result>

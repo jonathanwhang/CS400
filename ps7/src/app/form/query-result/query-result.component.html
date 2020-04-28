@@ -1,0 +1,9 @@
+<ul *ngIf="results">
+  <li *ngFor="let result of results">
+    {{result.title}}
+    <ul>
+      <li>{{result.year}}</li>
+      <li>{{result.plot}}</li>
+    </ul>
+  </li>
+</ul>
