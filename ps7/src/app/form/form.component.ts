@@ -15,8 +15,6 @@ export class FormComponent implements OnInit {
   year: String;
   plot: String;
 
-  data: any;
-
   constructor(private form: FormBuilder, private http: HttpClient) {
   }
 
